@@ -3,7 +3,7 @@ import Page from './page.js';
 import { ProductsPageSelectors } from '../../selectors/AllSelectors.js';
 
 /**
- * sub page containing specific selectors and methods for a specific page
+ * sub page containing specific selectors and methods for a products page
  */
 class ProductsPage extends Page {
     /**
@@ -12,7 +12,6 @@ class ProductsPage extends Page {
 
     get labelProducts () {
         return $(ProductsPageSelectors.labelProducts());
-        // return $('//android.widget.TextView[@text="PRODUCTS"]');
     }
 
     get burgerMenu () {

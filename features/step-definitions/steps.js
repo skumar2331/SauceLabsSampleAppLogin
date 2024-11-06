@@ -9,9 +9,7 @@ Given(/^I am on the login page$/, async () => {
     await expect(LoginPage.titleLoginPage).toBeExisting()
 });
 
-// When(/^I login with (\w+) and (.+)$/, async (username, password) => {
 When(/^I login with (.*) and (.*)$/, async (username, password) => {
-// When(/I login with {string} and {string}/, async (username, password) => {
     await LoginPage.login(username, password)
     await browser.pause(5000)
 });
