@@ -24,10 +24,9 @@ After the login and assertion is successful the script logs the use out of the a
 ![image](https://github.com/user-attachments/assets/9da1b41b-3687-4551-b708-cad2c4d16109)
 
 4. Appium should be installed globally using **npm i -g appium**
-5. Create a Device, preferably of API 30 and Android 11.0 (Since the sample app used seemed to be developed in late 2020). But if you wish to use any other device, its also fine.
+5. Create a Device, preferably of API 30 and Android 11.0 (Since the sample app used seemed to be developed in late 2020). But if you wish to use any other device version, its also fine.
 6. Install the app under test on the newly created virtual device.
-7. Make sure to replace the app path in the wdio.conf.js file with the absolute path of the app that your local environment has. The application sits inside **app** directory of the aproject. 
-You can right click and copy path and paste it against **'appium:app'** capability(make sure to use **\\** instead of **\**)
+7. The application sits inside **app** directory of the project. 
 
 **Steps to Execute**
 1. clone the repository and open it in **VS Code**
