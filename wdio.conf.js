@@ -1,10 +1,6 @@
-// const allure = require('allure-commandline')
 import allure from 'allure-commandline'
 import path from 'path';
-import { fileURLToPath } from 'url';
-const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-const __dirname = path.dirname(__filename); // get the name of the directory
-const pathToApp = path.join(__dirname, 'app\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk')
+
 export const config = {
     //
     // ====================
@@ -65,7 +61,7 @@ export const config = {
         'appium:automationName': 'UiAutomator2',
         'appium:noReset': true,
         'appium:newCommandTimeout': 240,
-        'appium:app': pathToApp
+        'appium:app': path.join(process.cwd(), "app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk")
     }],
 
     //

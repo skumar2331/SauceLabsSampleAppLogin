@@ -32,5 +32,6 @@ After the login and assertion is successful the script logs the use out of the a
 1. clone the repository and open it in **VS Code**
 2. Open Terminal and run **npm install** - This will create the node_modules and install all the dependencies provided inside package.json
 3. Open Command Prompt and run command **appium** - This will start the appium services
-4. On VS Code terminal run the command **npx wdio wdio.conf.js**. Make sure your virtual mobile device is up and running.
+4. **loginTest** script is added to package.json to execute the current login use case. 
+   On the IDE terminal run the command **npm run loginTest**. Make sure your virtual mobile device is up and running. 
 5. Allure reporter is used at OnComplete hook to generate the test results automatically, just run **npx allure open** to render the results on a browser.

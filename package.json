@@ -1,6 +1,9 @@
 {
   "name": "mobile-wdio",
   "type": "module",
+  "scripts": {
+    "loginTest":"npx wdio run wdio.conf.js"
+  },
   "devDependencies": {
     "@wdio/allure-reporter": "^9.2.2",
     "@wdio/appium-service": "^9.2.9",
